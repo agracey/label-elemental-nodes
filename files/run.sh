@@ -9,7 +9,7 @@ fi
 if [ ! -f /root/bin/add-label.sh ]
 then
 cp add-label.sh /root/bin/add-label.sh
-chmod 
+chmod 777 /root/bin/add-label.sh
 fi
 
 systemctl enable --now --no-block elemental-add-label
