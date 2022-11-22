@@ -1,0 +1,12 @@
+[Unit]
+Description=elemental_add_label setup
+Wants=network-pre.target
+
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/root/bin/add-label.sh
+
+[Install]
+WantedBy=multi-user.target network-online.target
